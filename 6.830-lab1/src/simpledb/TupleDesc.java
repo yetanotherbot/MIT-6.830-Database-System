@@ -6,6 +6,10 @@ import java.util.*;
  */
 public class TupleDesc {
 
+    private Type[] fieldTypes;
+    private String[] fieldNames;
+    private int size;
+
     /**
      * Merge two TupleDescs into one, with td1.numFields + td2.numFields
      * fields, with the first td1.numFields coming from td1 and the remaining
@@ -15,8 +19,14 @@ public class TupleDesc {
      * @return the new TupleDesc
      */
     public static TupleDesc combine(TupleDesc td1, TupleDesc td2) {
-        // some code goes here
-        return null;
+        int numFields1 = td1.numFields(), numFields2 = td2.numFields();
+        Type[] comFieldTypes = new Type[numFields1 + numFields2];
+        String[] comFieldNames = new String[numFields1 + numFields2];
+        System.arraycopy(td1.fieldTypes, 0, comFieldTypes, 0, numFields1);
+        System.arraycopy(td2.fieldTypes, 0, comFieldTypes, numFields1, numFields2);
+        System.arraycopy(td1.fieldNames, 0, comFieldNames, 0, numFields1);
+        System.arraycopy(td2.fieldNames, 0, comFieldNames, numFields1, numFields2);
+        return new TupleDesc(comFieldTypes, comFieldNames);
     }
 
     /**
@@ -29,6 +39,10 @@ public class TupleDesc {
      */
     public TupleDesc(Type[] typeAr, String[] fieldAr) {
         // some code goes here
+        fieldTypes = typeAr;
+        fieldNames = fieldAr;
+        for (Type type: fieldTypes)
+            size += type.getLen();
     }
 
     /**
@@ -41,6 +55,10 @@ public class TupleDesc {
      */
     public TupleDesc(Type[] typeAr) {
         // some code goes here
+        fieldTypes = typeAr;
+        fieldNames = new String[typeAr.length];
+        for (Type type: fieldTypes)
+            size += type.getLen();
     }
 
     /**
@@ -48,7 +66,7 @@ public class TupleDesc {
      */
     public int numFields() {
         // some code goes here
-        return 0;
+        return fieldTypes.length;
     }
 
     /**
@@ -60,7 +78,9 @@ public class TupleDesc {
      */
     public String getFieldName(int i) throws NoSuchElementException {
         // some code goes here
-        return null;
+        if (i < 0 || i >= numFields())
+            throw new NoSuchElementException();
+        return fieldNames[i];
     }
 
     /**
@@ -71,8 +91,13 @@ public class TupleDesc {
      * @throws NoSuchElementException if no field with a matching name is found.
      */
     public int nameToId(String name) throws NoSuchElementException {
-        // some code goes here
-        return 0;
+        if (name == null) throw new NoSuchElementException();
+        int i = 0;
+        for (String fieldName: fieldNames) {
+            if (name.equals(fieldName)) return i;
+            ++i;
+        }
+        throw new NoSuchElementException();
     }
 
     /**
@@ -84,7 +109,9 @@ public class TupleDesc {
      */
     public Type getType(int i) throws NoSuchElementException {
         // some code goes here
-        return null;
+        if (i < 0 || i >= numFields())
+            throw new NoSuchElementException();
+        return fieldTypes[i];
     }
 
     /**
@@ -93,7 +120,7 @@ public class TupleDesc {
      */
     public int getSize() {
         // some code goes here
-        return 0;
+        return size;
     }
 
     /**
@@ -105,8 +132,16 @@ public class TupleDesc {
      * @return true if the object is equal to this TupleDesc.
      */
     public boolean equals(Object o) {
-        // some code goes here
-        return false;
+        if (o == null) return false;
+        if (!TupleDesc.class.isAssignableFrom(o.getClass()))
+            return false;
+        final TupleDesc other = (TupleDesc) o;
+        if (getSize() != other.getSize() || numFields() != other.numFields())
+            return false;
+        for (int i = 0; i < numFields(); ++i)
+            if (!fieldTypes[i].equals(other.fieldTypes[i]))
+                return false;
+        return true;
     }
 
     public int hashCode() {
@@ -122,7 +157,16 @@ public class TupleDesc {
      * @return String describing this descriptor.
      */
     public String toString() {
-        // some code goes here
-        return "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < numFields(); ++i) {
+            Type type = getType(i);
+            String name = getFieldName(i);
+            sb.append(type == Type.INT_TYPE ? "INT_TYPE" : "STRING_TYPE");
+            sb.append('(');
+            sb.append(name);
+            if (i < numFields() - 1) sb.append("), ");
+            else sb.append(")");
+        }
+        return sb.toString();
     }
 }

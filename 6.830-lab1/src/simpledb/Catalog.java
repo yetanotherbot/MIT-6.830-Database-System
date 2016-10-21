@@ -16,12 +16,27 @@ import java.util.*;
 
 public class Catalog {
 
+    private class TableBundle {
+        DbFile dbFile;
+        String primaryKey;
+        String name;
+        TableBundle(DbFile dbFile_, String name_, String primaryKey_) {
+            dbFile = dbFile_;
+            name = name_;
+            primaryKey = primaryKey_;
+        }
+    }
+
+    private NavigableMap<Integer, TableBundle> idBundles;
+    private NavigableMap<String, TableBundle> nameBundles;
+
     /**
      * Constructor.
      * Creates a new, empty catalog.
      */
     public Catalog() {
-        // some code goes here
+        idBundles = new TreeMap<Integer, TableBundle>();
+        nameBundles = new TreeMap<String, TableBundle>();
     }
 
     /**
@@ -34,7 +49,13 @@ public class Catalog {
      * conflict exists, use the last table to be added as the table for a given name.
      */
     public void addTable(DbFile file, String name, String pkeyField) {
-        // some code goes here
+        TableBundle bundle = new TableBundle(file, name, pkeyField);
+        if (nameBundles.containsKey(name)) {
+            int tableid = nameBundles.get(name).dbFile.getId();
+            idBundles.remove(tableid);
+        }
+        nameBundles.put(name, bundle);
+        idBundles.put(file.getId(), bundle);
     }
 
     public void addTable(DbFile file, String name) {
@@ -58,8 +79,10 @@ public class Catalog {
      * @throws NoSuchElementException if the table doesn't exist
      */
     public int getTableId(String name) {
-        // some code goes here
-        return 0;
+        if (name == null) throw new NoSuchElementException();
+        TableBundle bundle = nameBundles.get(name);
+        if (bundle != null) return bundle.dbFile.getId();
+        else throw new NoSuchElementException();
     }
 
     /**
@@ -68,8 +91,7 @@ public class Catalog {
      *     function passed to addTable
      */
     public TupleDesc getTupleDesc(int tableid) throws NoSuchElementException {
-        // some code goes here
-        return null;
+        return idBundles.get(tableid).dbFile.getTupleDesc();
     }
 
     /**
@@ -79,28 +101,26 @@ public class Catalog {
      *     function passed to addTable
      */
     public DbFile getDbFile(int tableid) throws NoSuchElementException {
-        // some code goes here
-        return null;
+        return idBundles.get(tableid).dbFile;
     }
 
     /** Delete all tables from the catalog */
     public void clear() {
-        // some code goes here
+        idBundles.clear();
+        nameBundles.clear();
     }
 
     public String getPrimaryKey(int tableid) {
-        // some code goes here
-        return null;
+        return idBundles.get(tableid).primaryKey;
     }
 
     public Iterator<Integer> tableIdIterator() {
         // some code goes here
-        return null;
+        return idBundles.keySet().iterator();
     }
 
     public String getTableName(int id) {
-        // some code goes here
-        return null;
+        return idBundles.get(id).name;
     }
     
     /**

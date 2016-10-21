@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MIT-6.830-Database-System.iml" filepath="$PROJECT_DIR$/.idea/MIT-6.830-Database-System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/6.830-lab1.iml" filepath="$PROJECT_DIR$/.idea/6.830-lab1.iml" />
     </modules>
   </component>
 </project>

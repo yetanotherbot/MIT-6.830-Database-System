@@ -19,13 +19,19 @@ public class BufferPool {
     constructor instead. */
     public static final int DEFAULT_PAGES = 50;
 
+    private Page[] pages;
+    private Permissions[] permissionses;
+    private int pageCount;
+
     /**
      * Creates a BufferPool that caches up to numPages pages.
      *
      * @param numPages maximum number of pages in this buffer pool.
      */
     public BufferPool(int numPages) {
-        // some code goes here
+        pages = new Page[numPages];
+        permissionses = new Permissions[numPages];
+        pageCount = 0;
     }
 
     /**
@@ -45,8 +51,20 @@ public class BufferPool {
      */
     public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
-        // some code goes here
-        return null;
+        for (int i = 0; i < pageCount; ++i)
+            if (pages[i].getId().equals(pid))
+                if (perm == Permissions.READ_WRITE && permissionses[i] == Permissions.READ_ONLY)
+                    throw new DbException("permission refused");
+                else {
+                    pages[i].markDirty(true, tid);
+                    return pages[i];
+                }
+        if (pageCount == pages.length) throw new DbException("insufficient space");
+        try {
+            pages[pageCount] = new HeapPage(pid, HeapPage.createEmptyPageData());
+        } catch (IOException e) {
+
+        }
     }
 
     /**

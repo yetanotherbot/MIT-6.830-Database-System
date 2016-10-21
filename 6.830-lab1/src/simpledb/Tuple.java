@@ -1,5 +1,6 @@
 package simpledb;
 
+
 /**
  * Tuple maintains information about the contents of a tuple.
  * Tuples have a specified schema specified by a TupleDesc object and contain
@@ -10,11 +11,17 @@ public class Tuple {
     /**
      * Create a new tuple with the specified schema (type).
      *
-     * @param td the schema of this tuple. It must be a valid TupleDesc
+     * @param tupleDesc the schema of this tuple. It must be a valid TupleDesc
      * instance with at least one field.
      */
+    private TupleDesc tupleDesc;
+    private Field[] fields;
+    private RecordId recordId;
+
     public Tuple(TupleDesc td) {
         // some code goes here
+        tupleDesc = td;
+        fields = new Field[tupleDesc.numFields()];
     }
 
     /**
@@ -22,7 +29,7 @@ public class Tuple {
      */
     public TupleDesc getTupleDesc() {
         // some code goes here
-        return null;
+        return tupleDesc;
     }
 
     /**
@@ -31,7 +38,7 @@ public class Tuple {
      */
     public RecordId getRecordId() {
         // some code goes here
-        return null;
+        return recordId;
     }
 
     /**
@@ -39,7 +46,7 @@ public class Tuple {
      * @param rid the new RecordId for this tuple.
      */
     public void setRecordId(RecordId rid) {
-        // some code goes here
+        recordId = rid;
     }
 
     /**
@@ -49,7 +56,7 @@ public class Tuple {
      * @param f new value for the field.
      */
     public void setField(int i, Field f) {
-        // some code goes here
+        fields[i] = f;
     }
 
     /**
@@ -58,8 +65,7 @@ public class Tuple {
      * @param i field index to return. Must be a valid index.
      */
     public Field getField(int i) {
-        // some code goes here
-        return null;
+        return fields[i];
     }
 
     /**
@@ -72,7 +78,14 @@ public class Tuple {
      * where \t is any whitespace, except newline, and \n is a newline
      */
     public String toString() {
-        // some code goes here
-        throw new UnsupportedOperationException("Implement this");
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < fields.length; ++i) {
+            sb.append(fields[i].toString());
+            if (i == fields.length - 1)
+                sb.append('\n');
+            else
+                sb.append('\t');
+        }
+        return sb.toString();
     }
 }
