@@ -38,11 +38,11 @@ public class RecordId {
      */
     @Override
     public boolean equals(Object o) {
-    	if (o == null) return false;
-        if (!RecordId.class.isAssignableFrom(o.getClass())) return false;
-        final RecordId other = (RecordId) o;
-        if (tupleNo != other.tupleNo || pageId != other.pageId) return false;
-        return true;
+        if (o != null && RecordId.class.isAssignableFrom(o.getClass())) {
+            final RecordId other = (RecordId) o;
+            return tupleNo == other.tupleNo && pageId.equals(other.pageId);
+        }
+        return false;
     }
     
     /**
@@ -52,9 +52,7 @@ public class RecordId {
      */
     @Override
     public int hashCode() {
-    	// some code goes here
-    	throw new UnsupportedOperationException("implement this");
-    	
+    	return (pageId.hashCode() << 12) & tupleNo;
     }
     
 }

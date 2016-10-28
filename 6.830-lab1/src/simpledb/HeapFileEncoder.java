@@ -119,9 +119,9 @@ public class HeapFileEncoder {
     while (!done) {
         int c = br.read();
         
-	// Ignore Windows/Notepad special line endings
-	if (c == '\r')
-	    continue;
+	    // Ignore Windows/Notepad special line endings
+	    if (c == '\r')
+	        continue;
 
         if (c == '\n') {
             if (first)
@@ -139,7 +139,7 @@ public class HeapFileEncoder {
                     System.out.println ("BAD LINE : " + s);
                 }
             }
-            else   if (typeAr[fieldNo] == Type.STRING_TYPE) {
+            else if (typeAr[fieldNo] == Type.STRING_TYPE) {
                 s = s.trim();
                 int overflow = Type.STRING_LEN - s.length();
                 if (overflow < 0) {

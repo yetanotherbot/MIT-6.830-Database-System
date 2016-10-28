@@ -1,6 +1,7 @@
 package simpledb;
 
 import java.io.*;
+
 /**
  * BufferPool manages the reading and writing of pages into memory from
  * disk. Access methods call into it to retrieve pages, and it fetches
@@ -51,19 +52,22 @@ public class BufferPool {
      */
     public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
-        for (int i = 0; i < pageCount; ++i)
-            if (pages[i].getId().equals(pid))
-                if (perm == Permissions.READ_WRITE && permissionses[i] == Permissions.READ_ONLY)
-                    throw new DbException("permission refused");
-                else {
-                    pages[i].markDirty(true, tid);
-                    return pages[i];
-                }
-        if (pageCount == pages.length) throw new DbException("insufficient space");
-        try {
-            pages[pageCount] = new HeapPage(pid, HeapPage.createEmptyPageData());
-        } catch (IOException e) {
-
+        synchronized (tid) {
+            for (int i = 0; i < pageCount; ++i)
+                if (pages[i].getId().equals(pid))
+                    if (perm == Permissions.READ_WRITE && permissionses[i] == Permissions.READ_ONLY)
+                        throw new DbException("permission refused");
+                    else {
+                        pages[i].markDirty(true, tid);
+                        return pages[i];
+                    }
+            if (pageCount == pages.length) throw new DbException("insufficient space");
+            try {
+                pages[pageCount] = new HeapPage((HeapPageId) pid, HeapPage.createEmptyPageData());
+                return pages[pageCount++];
+            } catch (IOException e) {
+                throw new DbException("failed to create new page");
+            }
         }
     }
 
