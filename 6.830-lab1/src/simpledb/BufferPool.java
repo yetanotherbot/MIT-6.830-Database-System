@@ -1,6 +1,7 @@
 package simpledb;
 
 import java.io.*;
+import java.util.HashMap;
 
 /**
  * BufferPool manages the reading and writing of pages into memory from
@@ -21,6 +22,7 @@ public class BufferPool {
     public static final int DEFAULT_PAGES = 50;
 
     private Page[] pages;
+    private HashMap<Integer, HeapFile> heapfiles;
     private Permissions[] permissionses;
     private int pageCount;
 
@@ -62,12 +64,8 @@ public class BufferPool {
                         return pages[i];
                     }
             if (pageCount == pages.length) throw new DbException("insufficient space");
-            try {
-                pages[pageCount] = new HeapPage((HeapPageId) pid, HeapPage.createEmptyPageData());
-                return pages[pageCount++];
-            } catch (IOException e) {
-                throw new DbException("failed to create new page");
-            }
+            pages[pageCount] = Database.getCatalog().getDbFile(pid.getTableId()).readPage(pid);
+            return pages[pageCount++];
         }
     }
 
