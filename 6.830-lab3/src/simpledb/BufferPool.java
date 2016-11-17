@@ -1,8 +1,7 @@
 package simpledb;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
+import java.util.*;
 
 /**
  * BufferPool manages the reading and writing of pages into memory from
@@ -23,9 +22,9 @@ public class BufferPool {
     public static final int DEFAULT_PAGES = 50;
 
     private LinkedHashMap<PageId, Page> pages;
-    private LinkedHashMap<PageId, Permissions> permissions;
 
     private int pagesLimit;
+    private LockManager lockManager;
 
     /**
      * Creates a BufferPool that caches up to numPages pages.
@@ -36,7 +35,7 @@ public class BufferPool {
 //        pages = new Page[numPages];
         pagesLimit = numPages;
         pages = new LinkedHashMap<PageId, Page>();
-        permissions = new LinkedHashMap<PageId, Permissions>();
+        lockManager = new LockManager();
     }
 
     /**
@@ -56,26 +55,31 @@ public class BufferPool {
      */
     public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
+        if (perm == Permissions.READ_WRITE)
+            lockManager.acquireWriteLock(tid, pid);
+        else lockManager.acquireReadLock(tid, pid);
         Page page;
-        if (pages.containsKey(pid)) {
-            page = pages.get(pid);
-            pages.remove(pid);
-        } else {
-            HeapFile file = ((HeapFile) Database.getCatalog().getDbFile(pid.getTableId()));
-            if (pid.pageno() < file.numPages()) {
-                page = file.readPage(pid);
+        synchronized (this) {
+            if (pages.containsKey(pid)) {
+                page = pages.get(pid);
+                pages.remove(pid);
             } else {
-                try {
-                    page = new HeapPage(((HeapPageId) pid), HeapPage.createEmptyPageData());
-                } catch (IOException e) {
-                    throw new DbException(e.getMessage());
+                HeapFile file = ((HeapFile) Database.getCatalog().getDbFile(pid.getTableId()));
+                if (pid.pageno() < file.numPages()) {
+                    page = file.readPage(pid);
+                } else {
+                    try {
+                        page = new HeapPage(((HeapPageId) pid), HeapPage.createEmptyPageData());
+                    } catch (IOException e) {
+                        throw new DbException(e.getMessage());
+                    }
                 }
+                if (pages.size() == this.pagesLimit)
+                    evictPage();
             }
-            if (pages.size() == this.pagesLimit)
-                evictPage();
+            pages.put(pid, page);
+            return page;
         }
-        pages.put(pid, page);
-        return page;
     }
 
     /**
@@ -88,8 +92,7 @@ public class BufferPool {
      * @param pid the ID of the page to unlock
      */
     public  void releasePage(TransactionId tid, PageId pid) {
-        // some code goes here
-        // not necessary for lab1|lab2
+        lockManager.releaseLock(tid, pid);
     }
 
     /**
@@ -98,15 +101,12 @@ public class BufferPool {
      * @param tid the ID of the transaction requesting the unlock
      */
     public  void transactionComplete(TransactionId tid) throws IOException {
-        // some code goes here
-        // not necessary for lab1|lab2
+        transactionComplete(tid, true);
     }
 
     /** Return true if the specified transaction has a lock on the specified page */
     public   boolean holdsLock(TransactionId tid, PageId p) {
-        // some code goes here
-        // not necessary for lab1|lab2
-        return false;
+        return lockManager.holdsLock(tid, p);
     }
 
     /**
@@ -118,8 +118,16 @@ public class BufferPool {
      */
     public   void transactionComplete(TransactionId tid, boolean commit)
         throws IOException {
-        // some code goes here
-        // not necessary for lab1|lab2
+        if (lockManager.getPagesHeldBy(tid) == null) return;
+        Set<PageId> pageIds = lockManager.getPagesHeldBy(tid);
+        if (commit) {
+            for (PageId pageId: pageIds)
+                flushPage(pageId);
+        } else {
+            for (PageId pageId: pageIds)
+                discardPage(pageId);
+        }
+        lockManager.releaseAllLocks(tid);
     }
 
     /**
@@ -192,9 +200,11 @@ public class BufferPool {
      */
     private synchronized  void flushPage(PageId pid) throws IOException {
         DbFile file = Database.getCatalog().getDbFile(pid.getTableId());
+        if (!pages.containsKey(pid)) return;
         Page p = pages.get(pid);
         if (p.isDirty() == null) return;
         file.writePage(p);
+        p.setBeforeImage();
         p.markDirty(false, null);
     }
 
@@ -210,13 +220,19 @@ public class BufferPool {
      * Flushes the page to disk to ensure dirty pages are updated on disk.
      */
     private synchronized  void evictPage() throws DbException {
-        PageId pid = pages.keySet().iterator().next();
-        try {
-            flushPage(pid);
-        } catch (IOException e) {
-            throw new DbException(e.getMessage());
+        Iterator<PageId> pidItr = pages.keySet().iterator();
+        while (pidItr.hasNext()) {
+            PageId pid = pidItr.next();
+            if (pages.get(pid).isDirty() != null) continue;
+            try {
+                flushPage(pid);
+            } catch (IOException e) {
+                throw new DbException(e.getMessage());
+            }
+            pages.remove(pid);
+            return;
         }
-        pages.remove(pid);
+        throw new DbException("all pages in the buffer pool are dirty");
     }
 
 }
