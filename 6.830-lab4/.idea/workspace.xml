@@ -2,369 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aee54ab-0813-45a8-8129-8f7fd2130889" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/.idea/6.830-lab1.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/.idea/ant.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/6.830-lab2-submitted.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/6.830-lab3-supplement.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/jline-0.9.94.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/junit-4.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/rand_gen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/AbstractDbFileIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/AbstractDbIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Aggregate$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Aggregate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/AggregateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Aggregator$Op.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Aggregator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/BufferPool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Catalog$Table.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Catalog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/CatalogTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/CostCard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Database.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/DbException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/DbFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/DbFileIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/DbIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/DeadlockTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Debug.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Delete.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Field.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Filter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/FilterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapFile$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapFileEncoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapFileReadTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapFileWriteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapPageId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapPageIdTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapPageReadTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/HeapPageWriteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Insert.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/InsertTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/IntAggregator$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/IntAggregator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/IntAggregatorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/IntField$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/IntField.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/IntHistogram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Join.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/JoinOptimizer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/JoinPredicate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/JoinPredicateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/JoinTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/LockManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/LockingTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/LogFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/LogicalFilterNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/LogicalJoinNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/LogicalPlan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/LogicalScanNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/LogicalSelectListNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/LogicalSubplanJoinNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/OrderBy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/PageId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Parser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/ParsingException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Permissions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/PlanCache.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Predicate$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Predicate$Op.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Predicate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/PredicateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Project.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Query.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/RecordId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/RecordIdTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/SemaphoreTpLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/SeqScan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/SimpleDb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/StringAggregator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/StringAggregatorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/StringField$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/StringField.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/StringHistogram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TableStats.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TestUtil$CreateHeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TestUtil$LockGrabber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TestUtil$MockScan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TestUtil$SkeletonFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TestUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TpLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Transaction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TransactionAbortedException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TransactionId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TransactionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Tuple.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TupleArrayIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TupleComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TupleDesc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TupleDescTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TupleIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TupleTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/TwoSemaphoreLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Type$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Type$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/UpgradableLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/Utility.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/AbortEvictionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/AggregateTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/AggregateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/DeleteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/EvictionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/FilterBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/FilterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/InsertTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/JoinTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/ScanTest$1InstrumentedHeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/ScanTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/SimpleDbTestBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/SystemTestUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/TransactionTest$ModifiableCyclicBarrier$UpdateLatch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/TransactionTest$ModifiableCyclicBarrier.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/TransactionTest$XactionTester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/simpledb/systemtest/TransactionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/AbstractDbFileIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/AbstractDbIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Aggregate$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Aggregate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Aggregator$Op.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Aggregator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/BufferPool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Catalog$Table.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Catalog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/CostCard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Database.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/DbException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/DbFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/DbFileIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/DbIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Debug.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Delete.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Field.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Filter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/HeapFile$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/HeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/HeapFileEncoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/HeapPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/HeapPageId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Insert.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/IntAggregator$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/IntAggregator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/IntField$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/IntField.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/IntHistogram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Join.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/JoinOptimizer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/JoinPredicate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/LockManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/LogFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/LogicalFilterNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/LogicalJoinNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/LogicalPlan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/LogicalScanNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/LogicalSelectListNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/LogicalSubplanJoinNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/OrderBy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/PageId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Parser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/ParsingException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Permissions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/PlanCache.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Predicate$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Predicate$Op.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Predicate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Project.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Query.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/RecordId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/SemaphoreTpLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/SeqScan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/SimpleDb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/StringAggregator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/StringField$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/StringField.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/StringHistogram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/TableStats.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/TpLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Transaction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/TransactionAbortedException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/TransactionId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Tuple.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/TupleArrayIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/TupleComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/TupleDesc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/TupleIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Type$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Type$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/src/simpledb/Utility.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/AggregateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/CatalogTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/DeadlockTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/FilterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/HeapFileReadTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/HeapFileWriteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/HeapPageIdTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/HeapPageReadTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/HeapPageWriteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/InsertTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/IntAggregatorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/JoinPredicateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/JoinTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/LockingTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/PredicateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/RecordIdTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/StringAggregatorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/TestUtil$CreateHeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/TestUtil$LockGrabber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/TestUtil$MockScan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/TestUtil$SkeletonFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/TestUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/TransactionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/TupleDescTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/TupleTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/AbortEvictionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/AggregateTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/AggregateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/DeleteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/EvictionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/FilterBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/FilterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/InsertTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/JoinTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/ScanTest$1InstrumentedHeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/ScanTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/SimpleDbTestBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/SystemTestUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/TransactionTest$ModifiableCyclicBarrier$UpdateLatch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/TransactionTest$ModifiableCyclicBarrier.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/TransactionTest$XactionTester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/test/simpledb/systemtest/TransactionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/bin/zql.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/catalog.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/data.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/data.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/grant_researchers.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/grants.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/lib/jline-0.9.94.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/lib/junit-4.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/lib/zql.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/nsf.schema" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/researchers.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/rand_gen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/AbstractDbFileIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/AbstractDbIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Aggregate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Aggregator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/BufferPool.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Catalog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/CostCard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Database.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/DbException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/DbFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/DbFileIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/DbIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Debug.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Delete.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Field.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Filter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/HeapFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/HeapFileEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/HeapPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/HeapPageId.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Insert.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/IntAggregator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/IntField.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/IntHistogram.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Join.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/JoinOptimizer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/JoinPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/LockManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/LogFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/LogicalFilterNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/LogicalJoinNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/LogicalPlan.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/LogicalScanNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/LogicalSelectListNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/LogicalSubplanJoinNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Node.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/OrderBy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Page.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/PageId.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Parser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/ParsingException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Permissions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/PlanCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Predicate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Project.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Query.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/RecordId.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/SemaphoreTpLock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/SeqScan.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/SimpleDb.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/StringAggregator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/StringField.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/StringHistogram.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/TableStats.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/TpLock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Transaction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/TransactionAbortedException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/TransactionId.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Tuple.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/TupleDesc.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/TupleIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/TwoSemaphoreLock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Type.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/UpgradableLock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/src/simpledb/Utility.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/AggregateTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/CatalogTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/DeadlockTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/FilterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/HeapFileReadTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/HeapFileWriteTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/HeapPageIdTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/HeapPageReadTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/HeapPageWriteTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/InsertTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/IntAggregatorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/JoinPredicateTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/JoinTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/LockingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/PredicateTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/RecordIdTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/StringAggregatorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/TestUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/TransactionTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/TupleDescTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/TupleTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/AbortEvictionTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/AggregateTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/DeleteTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/EvictionTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/FilterBase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/FilterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/InsertTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/JoinTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/ScanTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/SimpleDbTestBase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/SystemTestUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../6.830-lab3/test/simpledb/systemtest/TransactionTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../6.830-lab3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../6.830-lab3/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/simpledb/DeadlockException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/simpledb/HashEquiJoin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/simpledb/OperatorCardinality.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/simpledb/QueryPlanVisualizer.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../6.830-lab4-supplement.tar.gz" afterPath="$PROJECT_DIR$/../6.830-lab4-supplement.tar.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/CostCard.java" afterPath="$PROJECT_DIR$/src/simpledb/CostCard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/IntHistogram.java" afterPath="$PROJECT_DIR$/src/simpledb/IntHistogram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/JoinOptimizer.java" afterPath="$PROJECT_DIR$/src/simpledb/JoinOptimizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/LogicalFilterNode.java" afterPath="$PROJECT_DIR$/src/simpledb/LogicalFilterNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/LogicalJoinNode.java" afterPath="$PROJECT_DIR$/src/simpledb/LogicalJoinNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/LogicalPlan.java" afterPath="$PROJECT_DIR$/src/simpledb/LogicalPlan.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/LogicalScanNode.java" afterPath="$PROJECT_DIR$/src/simpledb/LogicalScanNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/LogicalSelectListNode.java" afterPath="$PROJECT_DIR$/src/simpledb/LogicalSelectListNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/LogicalSubplanJoinNode.java" afterPath="$PROJECT_DIR$/src/simpledb/LogicalSubplanJoinNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/Parser.java" afterPath="$PROJECT_DIR$/src/simpledb/Parser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/ParsingException.java" afterPath="$PROJECT_DIR$/src/simpledb/ParsingException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/PlanCache.java" afterPath="$PROJECT_DIR$/src/simpledb/PlanCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/SimpleDb.java" afterPath="$PROJECT_DIR$/src/simpledb/SimpleDb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/StringHistogram.java" afterPath="$PROJECT_DIR$/src/simpledb/StringHistogram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/simpledb/TableStats.java" afterPath="$PROJECT_DIR$/src/simpledb/TableStats.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/simpledb/IntAggregatorTest.java" afterPath="$PROJECT_DIR$/test/simpledb/IntAggregatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/simpledb/JoinOptimizerTest.java" afterPath="$PROJECT_DIR$/test/simpledb/JoinOptimizerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/simpledb/TableStatsTest.java" afterPath="$PROJECT_DIR$/test/simpledb/TableStatsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/simpledb/systemtest/QueryTest.java" afterPath="$PROJECT_DIR$/test/simpledb/systemtest/QueryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/simpledb/systemtest/SystemTestUtil.java" afterPath="$PROJECT_DIR$/test/simpledb/systemtest/SystemTestUtil.java" />
     </list>
     <ignored path="6.830-lab1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -385,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BufferPool.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BufferPool.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simpledb/BufferPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+            <state relative-caret-position="666">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -398,8 +61,38 @@
       <file leaf-file-name="LockManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simpledb/LockManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="416">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleDb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/simpledb/SimpleDb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/simpledb/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -408,12 +101,12 @@
       <file leaf-file-name="TpLock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simpledb/TpLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
+            <state relative-caret-position="558">
               <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -422,14 +115,10 @@
       <file leaf-file-name="UpgradableLock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/simpledb/UpgradableLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+            <state relative-caret-position="324">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2442#2443#0" expanded="true" />
-                <element signature="e#2472#2473#0" expanded="true" />
-                <element signature="e#2508#2509#0" expanded="true" />
-                <element signature="e#2540#2541#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -530,9 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -551,8 +237,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6.830-lab4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6.830-lab4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6.830-lab4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6.830-lab4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpledb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1081,7 +802,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1093,8 +814,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25121164" sideWeight="0.58743167" order="0" side_tool="true" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25121164" sideWeight="0.4125683" order="1" side_tool="false" content_ui="tabs" x="112" y="23" width="309" height="722" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25121164" sideWeight="0.59153" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25121164" sideWeight="0.40846995" order="1" side_tool="false" content_ui="tabs" x="112" y="23" width="309" height="722" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1154,63 +875,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/simpledb/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/simpledb/systemtest/FilterBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpledb/TupleDesc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/simpledb/InsertTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpledb/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpledb/Delete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpledb/AbstractDbFileIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/Condition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4966">
@@ -1272,6 +936,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#273#274#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1372,6 +1040,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1380,11 +1049,11 @@
         <state relative-caret-position="172">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="false" />
+            <element signature="e#1050#1051#0" expanded="false" />
+            <element signature="e#1207#1208#0" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1351#1352#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1482,6 +1151,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1497,39 +1167,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpledb/TpLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpledb/LockManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simpledb/UpgradableLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2442#2443#0" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
-            <element signature="e#2508#2509#0" expanded="true" />
-            <element signature="e#2540#2541#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1541,10 +1180,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/HashEquiJoin.java" />
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/OperatorCardinality.java" />
+    <entry file="file://$PROJECT_DIR$/src/java/simpledb/DeadlockException.java" />
+    <entry file="file://$PROJECT_DIR$/src/simpledb/UpgradableLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpledb/IntAggregator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpledb/TpLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpledb/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpledb/SimpleDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpledb/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/simpledb/BufferPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+        <state relative-caret-position="666">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simpledb/LockManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>

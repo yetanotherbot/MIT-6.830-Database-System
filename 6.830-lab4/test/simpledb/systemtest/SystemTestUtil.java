@@ -131,12 +131,7 @@ public class SystemTestUtil {
         iterator.close();
 
         if (!copy.isEmpty()) {
-//            String msg = "total tuples: " + tuples.size() + "\n";
-//            for (ArrayList<Integer> t: tuples)
-//                msg += "\t" + Utility.listToString(t) + "\n";
-            String msg = "expected to find the following tuples: \n";
-
-
+            String msg = "expected to find the following tuples:\n";
             final int MAX_TUPLES_OUTPUT = 10;
             int count = 0;
             for (ArrayList<Integer> t : copy) {

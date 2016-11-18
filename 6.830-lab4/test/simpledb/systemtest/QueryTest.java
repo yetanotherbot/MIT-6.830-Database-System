@@ -3,6 +3,10 @@ package simpledb.systemtest;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Vector;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 import simpledb.BufferPool;
@@ -10,10 +14,14 @@ import simpledb.Database;
 import simpledb.DbException;
 import simpledb.HeapFile;
 import simpledb.HeapFileEncoder;
+import simpledb.JoinOptimizer;
+import simpledb.LogicalJoinNode;
 import simpledb.Parser;
+import simpledb.Predicate;
 import simpledb.TableStats;
 import simpledb.Transaction;
 import simpledb.TransactionAbortedException;
+import simpledb.TransactionId;
 import simpledb.Utility;
 
 public class QueryTest {
@@ -29,7 +37,7 @@ public class QueryTest {
 	public static HeapFile createDuplicateHeapFile(ArrayList<ArrayList<Integer>> tuples, int columns, String colPrefix) throws IOException {
         File temp = File.createTempFile("table", ".dat");
         temp.deleteOnExit();
-        HeapFileEncoder.convert(tuples, temp, BufferPool.getPageSize(), columns);
+        HeapFileEncoder.convert(tuples, temp, BufferPool.PAGE_SIZE, columns);
         return Utility.openHeapFile(columns, colPrefix, temp);
 	}
 	
@@ -41,7 +49,7 @@ public class QueryTest {
 		// string-heuristic code.		
 		final int IO_COST = 101;
 		
-//		HashMap<String, TableStats> stats = new HashMap<String, TableStats>();
+		HashMap<String, TableStats> stats = new HashMap<String, TableStats>();
 		
 		// Create all of the tables, and add them to the catalog
 		ArrayList<ArrayList<Integer>> empTuples = new ArrayList<ArrayList<Integer>>();
@@ -61,24 +69,23 @@ public class QueryTest {
 		Database.getCatalog().addTable(hobbies, "hobbies");
 		
 		// Get TableStats objects for each of the tables that we just generated.
-		TableStats.setTableStats("emp", new TableStats(Database.getCatalog().getTableId("emp"), IO_COST));
-		TableStats.setTableStats("dept", new TableStats(Database.getCatalog().getTableId("dept"), IO_COST));
-		TableStats.setTableStats("hobby", new TableStats(Database.getCatalog().getTableId("hobby"), IO_COST));
-		TableStats.setTableStats("hobbies", new TableStats(Database.getCatalog().getTableId("hobbies"), IO_COST));
+		stats.put("emp", new TableStats(Database.getCatalog().getTableId("emp"), IO_COST));
+		stats.put("dept", new TableStats(Database.getCatalog().getTableId("dept"), IO_COST));
+		stats.put("hobby", new TableStats(Database.getCatalog().getTableId("hobby"), IO_COST));
+		stats.put("hobbies", new TableStats(Database.getCatalog().getTableId("hobbies"), IO_COST));
 
-//		Parser.setStatsMap(stats);
+		Parser.setStatsMap(stats);
 		
 		Transaction t = new Transaction();
 		t.start();
-		Parser p = new Parser();
-		p.setTransaction(t);
+		Parser.setTransaction(t);
 		
 		// Each of these should return around 20,000
 		// This Parser implementation currently just dumps to stdout, so checking that isn't terribly clean.
 		// So, don't bother for now; future TODO.
 		// Regardless, each of the following should be optimized to run quickly,
 		// even though the worst case takes a very long time.
-		p.processNextStatement("SELECT * FROM emp,dept,hobbies,hobby WHERE emp.c1 = dept.c0 AND hobbies.c0 = emp.c2 AND hobbies.c1 = hobby.c0 AND emp.c3 < 1000;");
+		Parser.processNextStatement("SELECT * FROM emp,dept,hobbies,hobby WHERE emp.c1 = dept.c0 AND hobbies.c0 = emp.c2 AND hobbies.c1 = hobby.c0 AND emp.c3 < 1000;");
 	}
 	
 	/**
