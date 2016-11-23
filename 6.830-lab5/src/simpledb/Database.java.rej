@@ -1,0 +1,69 @@
+***************
+*** 15,23 ****
+      private final Catalog _catalog;
+      private BufferPool _bufferpool; 
+  
+      private Database() {
+      	_catalog = new Catalog();
+      	_bufferpool = new BufferPool(BufferPool.DEFAULT_PAGES);
+      }
+  
+      /** Return the buffer pool of the static Database instance*/
+--- 15,71 ----
+      private final Catalog _catalog;
+      private BufferPool _bufferpool; 
+  
++     private final static String LOGFILENAME = "log";
++     private LogFile _logfile;
++ 
++     private final static int CP_FREQ = 500;
++ 
++     private void startControllerThread() {
++     	final Thread mainThread = Thread.currentThread();
++         Thread t = new Thread() {
++                 public void run() {
++                     while (mainThread.isAlive()) {
++                         try {
++                             Thread.sleep(CP_FREQ);
++                         } catch (InterruptedException e) {
++                         }
++                         if (!mainThread.isAlive()) break;
++ 
++                         /*        try {
++                              _logfile.logCheckpoint();
++                             if (++iter % TRUNC_ITER == 0) {
++                                 System.out.println("TRUNCATING.");
++                                 _logfile.logTruncate();
++                                 System.out.println("DONE.");
++                             }
++                         } catch (IOException e) {
++                             System.out.println("ERROR WRITING PERIODIC CHECKPOINT.");
++                             e.printStackTrace();
++                             System.exit(1);
++                             }*/
++                     }
++                 }
++             };
++ 
++         t.start();    
++     }
++ 
+      private Database() {
+      	_catalog = new Catalog();
+      	_bufferpool = new BufferPool(BufferPool.DEFAULT_PAGES);
++     	try {
++             _logfile = new LogFile(new File(LOGFILENAME));
++         } catch(IOException e) {
++             _logfile = null;
++             e.printStackTrace();
++             System.exit(1);
++         }
++         // startControllerThread();
++     }
++ 
++     /** Return the log file of the static Database instance*/
++     public static LogFile getLogFile() {
++         return _instance._logfile;
+      }
+  
+      /** Return the buffer pool of the static Database instance*/

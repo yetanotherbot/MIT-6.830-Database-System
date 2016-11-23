@@ -1,0 +1,24 @@
+***************
+*** 63,71 ****
+       *  constructors.
+       */
+      public int[] serialize() {
+-         // some code goes here
+-         // Not necessary for lab 1, 2, or 3
+-         return null;
+      }
+  
+  }
+--- 63,74 ----
+       *  constructors.
+       */
+      public int[] serialize() {
++         int data[] = new int[2];
++ 
++         data[0] = tableId;
++         data[1] = pgNo;
++ 
++         return data;
+      }
+  
+  }

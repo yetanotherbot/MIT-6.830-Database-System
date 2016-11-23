@@ -1,0 +1,17 @@
+***************
+*** 50,53 ****
+          to it.  Used by recovery.
+      */
+      public Page getBeforeImage();
+  }
+--- 50,59 ----
+          to it.  Used by recovery.
+      */
+      public Page getBeforeImage();
++ 
++     /*
++      * a transaction that wrote this page just committed it.
++      * copy current content to the before image.
++      */
++     public void setBeforeImage();
+  }

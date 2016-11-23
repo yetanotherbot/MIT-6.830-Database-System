@@ -1,0 +1,48 @@
+***************
+*** 60,65 ****
+          }
+          dis.close();
+  
+      }
+  
+      /** Retrieve the number of tuples on this page.
+--- 62,68 ----
+          }
+          dis.close();
+  
++         setBeforeImage();
+      }
+  
+      /** Retrieve the number of tuples on this page.
+***************
+*** 89,98 ****
+      /** Return a view of this page before it was modified
+          -- used by recovery */
+      public HeapPage getBeforeImage(){
+-         // some code goes here
+-         // only necessary for lab4
+          return null;
+      }
+  
+      /**
+       * @return the PageId associated with this page.
+--- 92,110 ----
+      /** Return a view of this page before it was modified
+          -- used by recovery */
+      public HeapPage getBeforeImage(){
++         try {
++             return new HeapPage(pid,oldData);
++         } catch (IOException e) {
++             e.printStackTrace();
++             //should never happen -- we parsed it OK before!
++             System.exit(1);
++         }
+          return null;
+      }
++     
++     public void setBeforeImage() {
++         oldData = getPageData().clone();
++     }
+  
+      /**
+       * @return the PageId associated with this page.

@@ -1,0 +1,74 @@
+***************
+*** 9,14 ****
+  
+  public class Transaction {
+      TransactionId tid;
+  
+      public Transaction() {
+          tid = new TransactionId();
+--- 9,15 ----
+  
+  public class Transaction {
+      TransactionId tid;
++     boolean started = false;
+  
+      public Transaction() {
+          tid = new TransactionId();
+***************
+*** 16,21 ****
+  
+      /** Start the transaction running */
+      public void start() {
+      }
+  
+      public TransactionId getId() {
+--- 17,28 ----
+  
+      /** Start the transaction running */
+      public void start() {
++         started = true;
++         try {
++             Database.getLogFile().logXactionBegin(tid);
++         } catch (IOException e) {
++             e.printStackTrace();
++         }
+      }
+  
+      public TransactionId getId() {
+***************
+*** 29,35 ****
+  
+      /** Handle the details of transaction commit / abort */
+      public void transactionComplete(boolean abort) throws IOException {
+                  Database.getBufferPool().transactionComplete(tid, !abort); // release locks
+      }
+  
+  
+--- 36,62 ----
+  
+      /** Handle the details of transaction commit / abort */
+      public void transactionComplete(boolean abort) throws IOException {
++ 
++         if (started) {
++             //write commit / abort records
++             if (abort) {
++                 Database.getLogFile().logAbort(tid); //does rollback too
++             } else {
++                 //write all the dirty pages for this transaction out
++                 Database.getBufferPool().flushPages(tid);
++                 Database.getLogFile().logCommit(tid);
++             }
++ 
++             try {
+                  Database.getBufferPool().transactionComplete(tid, !abort); // release locks
++             } catch (IOException e) {
++                 e.printStackTrace();
++             }
++ 
++             //setting this here means we could possibly write multiple abort records -- OK?
++             started = false;
++         }
++ 
+      }
+  
+  

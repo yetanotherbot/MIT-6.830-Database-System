@@ -1,0 +1,40 @@
+***************
+*** 235,240 ****
+          if (p == null)
+              return; //not in buffer pool -- doesn't need to be flushed
+  
+          DbFile file = Database.getCatalog().getDbFile(pid.getTableId());
+          file.writePage(p);
+          p.markDirty(false, null);
+--- 235,249 ----
+          if (p == null)
+              return; //not in buffer pool -- doesn't need to be flushed
+  
++         // RECOVERY
++         TransactionId dirtier = p.isDirty();
++ 
++         if (dirtier == null)
++             return;
++ 
++         Database.getLogFile().logWrite(dirtier, p.getBeforeImage(), p);
++         Database.getLogFile().force();
++ 
+          DbFile file = Database.getCatalog().getDbFile(pid.getTableId());
+          file.writePage(p);
+          p.markDirty(false, null);
+***************
+*** 411,416 ****
+                              //p.markDirty(true, tid);
+                              //really, pages aught to be have been flushed already before we do this!
+                              flushPage(pid);
+                          }
+                      } catch (IOException e) {
+                          throw new RuntimeException("failed during commit: " + e);
+--- 420,426 ----
+                              //p.markDirty(true, tid);
+                              //really, pages aught to be have been flushed already before we do this!
+                              flushPage(pid);
++                             p.setBeforeImage(); // next abort should only roll back to here
+                          }
+                      } catch (IOException e) {
+                          throw new RuntimeException("failed during commit: " + e);
