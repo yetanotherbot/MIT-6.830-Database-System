@@ -105,14 +105,16 @@ public class LogFile {
         @param f The log file's name
     */
     public LogFile(File f) throws IOException {
-	this.logFile = f;
+	    this.logFile = f;
         raf = new RandomAccessFile(f, "rw");
         recoveryUndecided = true;
 
         // install shutdown hook to force cleanup on close
-        // Runtime.getRuntime().addShutdownHook(new Thread() {
-                // public void run() { shutdown(); }
-            // });
+//        Runtime.getRuntime().addShutdownHook(new Thread() {
+//            public void run() {
+//                shutdown();
+//            }
+//        });
 
         //XXX WARNING -- there is nothing that verifies that the specified
         // log file actually corresponds to the current catalog.
@@ -125,7 +127,7 @@ public class LogFile {
     // the log.
     void preAppend() throws IOException {
         totalRecords++;
-        if(recoveryUndecided){
+        if (recoveryUndecided) {
             recoveryUndecided = false;
             raf.seek(0);
             raf.setLength(0);
@@ -466,7 +468,24 @@ public class LogFile {
         synchronized (Database.getBufferPool()) {
             synchronized(this) {
                 preAppend();
-                // some code goes here
+                if (!tidToFirstLogRecord.containsKey(tid.getId()))
+                    throw new NoSuchElementException();
+                long firstRecord = tidToFirstLogRecord.get(tid.getId());
+                long offset = raf.length();
+                while (offset != firstRecord) {
+                    raf.seek(offset - LONG_SIZE);
+                    offset = raf.readLong();
+                    raf.seek(offset);
+                    int recordType = raf.readInt();
+                    long transactionId = raf.readLong();
+                    if (recordType == UPDATE_RECORD && transactionId == tid.getId()) {
+                        Page page = readPageData(raf);
+                        DbFile dbFile = Database.getCatalog().getDbFile(page.getId().getTableId());
+                        dbFile.writePage(page);
+                        Database.getBufferPool().discardPage(page.getId());
+                    }
+                }
+                raf.seek(raf.length());
             }
         }
     }
@@ -493,9 +512,46 @@ public class LogFile {
         synchronized (Database.getBufferPool()) {
             synchronized (this) {
                 recoveryUndecided = false;
-                // some code goes here
+                raf.seek(0);
+                long lastCheckPoint = raf.readLong();
+                long offset = raf.length();
+                long firstRecord;
+                long recordTid;
+                Set<Long> completedTids = new HashSet<Long>();
+                while (lastCheckPoint != offset) {
+                    raf.seek(offset - LONG_SIZE);
+                    offset = raf.readLong();
+                    if (offset == -1) break;
+                    raf.seek(offset);
+                    int recordType = raf.readInt();
+                    switch (recordType) {
+                        case BEGIN_RECORD:
+                            recordTid = raf.readLong();
+                            firstRecord = raf.readLong();
+                            if (!completedTids.contains(recordTid)) {
+                                tidToFirstLogRecord.put(recordTid, firstRecord);
+                            }
+                            break;
+                        case COMMIT_RECORD: case ABORT_RECORD:
+                            recordTid = raf.readLong();
+                            completedTids.add(recordTid);
+                            break;
+                        case CHECKPOINT_RECORD:
+                            raf.readLong();
+                            for (int numTids = raf.readInt(); numTids > 0; --numTids) {
+                                recordTid = raf.readLong();
+                                firstRecord = raf.readLong();
+                                if (!completedTids.contains(recordTid))
+                                    tidToFirstLogRecord.put(recordTid, firstRecord);
+                            }
+                            break;
+                    }
+                }
+                currentOffset = raf.length();
+                for (Object tid : tidToFirstLogRecord.keySet().toArray())
+                    logAbort(TransactionId.make((Long) tid));
             }
-         }
+        }
     }
 
     /** Print out a human readable represenation of the log */
